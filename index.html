@@ -37,39 +37,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rguster</title>
+  <title>login website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
   integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ---- -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div class="toast ">
+  
+    <div class="toast-content">
+      <i class="fas fa-solid fa-check check"></i>
+  
+      <div class="message">
+        <span class="text text-1">Success</span>
+        <span class="text text-2">Welcome User!</span>
+      </div>
+    </div>
+    <i class="fa-solid fa-xmark close"></i>
+  
+    
+    <div class="progress "></div>
+  </div>
+
     <div class="container">
       <div class="login">
         <div class="form_box">
           <h1 id="title">Sign Up</h1>
-          <form action="">
+          <form action="" id="signupForm">
             <div class="input_group">
 
               <div class="input_field" id="nameField">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name" required>
               </div>
 
               <div class="input_field">
                 <i class="fas fa-envelope"></i>      
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="Email" required>
               </div>
 
               <div class="input_field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="Password" required>
               </div>
               <p>Lost Password <a href="#">Click Here!</a></p>
             </div>
             <div class="btn_field">
-              <button type="button" id="signupBtn">Sign up</button>
-              <button type="button" id="signinBtn" class="disable">Sign in</button>
+              <button type="submit" id="signupBtn">Sign up</button>
+              <button type="submit" id="signinBtn" class="disable">Sign in</button>
             </div>
           </form>
         </div>
